@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --primary-color: #007bff;
+    --primary-light: #e6f2ff;
+    --success-color: #28a745;
+    --light-gray-color: #f8f9fa;
+    --gray-color: #dee2e6;
+    --dark-gray-color: #6c757d;
+    --dark-color: #343a40;
+    --bg-color: #e9ecef;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --merah-color: #d70000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--dark-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+button {
+    user-select: none;
+}
+
+.form-wrapper {
+    background-color: white;
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+}.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+    cursor: default;
+}.form-header h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--primary-color);
+}.form-header p {
+    font-size: 18px;
+    color: var(--dark-gray-color);
+}.form-body {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}.form-row .subhead h2{
+    margin-top: -12.5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--dark-color);
+    cursor: default;
+}.form-row label {
+    font-weight: 600;
+    font-size: 16px;
+}.form-row input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--gray-color);
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}.form-row input[type="text"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px var(--primary-light);
+}.search-container {
+    position: relative;
+}.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}.search-results div {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 15px;
+}.search-results div:hover {
+    background-color: var(--primary-light);
+}.button-submit {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: var(--success-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}.button-submit:hover {
+    background-color: #218838;
+}.form-footer {
+    text-align: center;
+    margin-top: 25px;
+    user-select: none;
+}.form-footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}.form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* dropdown */
+.dropd {
+    position: relative;
+    min-width: 200px;
+}.dropd select {
+    appearance: none;   
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('../icon/LsDropdown.svg');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 10px 10px;
+    cursor: pointer;
+    padding: 12px 15px;
+    border: 1px solid var(--gray-color);
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}.dropd select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+/* mobile */
+@media (max-width: 875px) {
+    .dropd select {
+        width: 100%;
+    }input::placeholder {
+        font-size: 14.5px;
+    }.form-row input [type="text"] {
+        font-size: 14px;
+    }.form-row p {
+        text-align: center;
+    }
+}
+@media (min-width: 875.1px) {
+    .dropd select {
+        width: 100%;
+    }
+}

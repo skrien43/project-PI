@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="©2025_10122877">
+    <title>Sekretariat Dosen UXYZ</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center; /* center horizontal */
+            align-items: center;     /* center vertical */
+            flex-direction: column;  /* susun elemen atas-bawah */
+            background-color: white; /* warna latar */
+            color: whitesmoke;
+        }
+
+        .img {
+            width: 1450px;
+            height: 410px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 35px;
+            font-weight: 600;
+            color: red;
+        }
+
+        @media (max-width: 875px) {
+            .img {
+                width: 60%;
+                height: auto;
+            }
+            p {
+                font-size: 125%;
+            }
+        }
+
+        @media (min-width: 875.1px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>SEDANG</p>
+    <img class="img" src="img/mtc.png" title="Maintenance...">
+    <p>SEDANG MAINTENANCE</p>
+</body>
+</html>

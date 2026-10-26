@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --primary-color: #007bff;
+    --primary-light: #e6f2ff;
+    --success-color: #28a745;
+    --error-color: #e12235;
+    --light-gray-color: #f8f9fa;
+    --gray-color: #dee2e6;
+    --dark-gray-color: #6c757d;
+    --dark-color: #343a40;
+    --bg-color: #e9ecef;
+    --text-color: black;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    font-family: 'Poppins', sans-serif;
+    cursor: default;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-image: url('../img/kmp4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}.blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4.5px);
+    z-index: -1;
+}
+
+button, a {
+    user-select: none;
+}
+
+/* main login */
+.glass-card {
+    width: auto;
+    min-height: 400px;
+    padding: 30px 25px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    color: var(--dark-color);
+    text-align: center;
+    font-weight: 500;
+    border: 1px solid var(--gray-color);
+}.glass-card h2 {
+    font-size: 30px;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}.glass-card a {
+    font-size: 15px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    user-select: none;
+}.glass-card a:hover {
+    text-decoration: underline;
+}.glass-card input {
+    display: flex;
+    width: auto;
+    margin: 8px 0;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid var(--gray-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}.glass-card input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px var(--primary-light);
+}.glass-card form {
+    font-size: 15px;
+    opacity: 1;
+}.glass-card button {
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--success-color);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}.glass-card button:hover {
+    background-color: #218838;
+}.glass-card .rembMe {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    white-space: nowrap;
+    color: var(--dark-gray-color);
+}.glass-card .rembMe input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin: 0 2px;
+    accent-color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* OTP */
+.card {
+    width: 325px;
+    margin: 0 auto;
+    padding: 30px 25px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    color: var(--dark-color);
+    text-align: center;
+}.card h2 {
+    font-size: 30px;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}.card p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}.code-box {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 24px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-weight: 600;
+    user-select: none;
+}.card a {
+    font-size: 15px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 2.5px;
+}.card a:hover {
+    text-decoration: underline;
+}
+
+
+.error {
+    color: var(--error-color);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    min-height: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.success {
+    color: var(--success-color);
+    margin-top: 10px;
+    min-height: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* mobile */
+@media (max-width: 860px) 
+    {
+    body {
+        background-image: url('../img/kmp1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
